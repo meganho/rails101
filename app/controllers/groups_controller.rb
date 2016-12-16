@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   def index
-    @groups = Group.all
+   @groups = Group.all
   end
 
   def new
@@ -27,9 +27,8 @@ class GroupsController < ApplicationController
 
     @group.update(group_params)
 
-     redirect_to groups_path, notice: "Update Success"
+    redirect_to groups_path, notice: "Update Success"
   end
-
 
   private
 
